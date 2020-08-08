@@ -6,8 +6,8 @@ import (
 )
 
 type User struct {
-	Name string `json:"name" form:"username"`
-	Age  int    `json:"age" form:"age"`
+	Name string `json:"name"`
+	Age  int    `json:"age"`
 }
 
 func (p User) Get(prop string) reflect.Value {
@@ -30,6 +30,6 @@ func main() {
 	}
 	fmt.Println(user.Get("Name"))
 	fmt.Println(user.Set("Name", "zfx_updated"))
-	fmt.Println(user.Get("Name"))
+	fmt.Printf("%v, %T\n", user.Get("Name").String(), user.Get("Name").String())
 	fmt.Println(user)
 }

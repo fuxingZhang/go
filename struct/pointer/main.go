@@ -30,6 +30,6 @@ func main() {
 	}
 	fmt.Println(user.Get("Name"))
 	fmt.Println(user.Set("Name", "zfx_updated"))
-	fmt.Println(user.Get("Name"))
+	fmt.Printf("%v, %T\n", user.Get("Name").String(), user.Get("Name").String())
 	fmt.Println(user)
 }
