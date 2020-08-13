@@ -19,4 +19,6 @@ func main() {
 	fmt.Println(yaml.Redis)
 	fmt.Println(yaml.Mysql)
 	fmt.Println(yaml.Mysql.Username)
+
+	fmt.Println(config.DatabaseConfig)
 }

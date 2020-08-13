@@ -48,5 +48,6 @@ func LoadYaml(path string) *YamlConfig {
 		log.Fatal("Unmarshal:", err)
 	}
 
+	DatabaseConfig = conf
 	return conf
 }
