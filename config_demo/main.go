@@ -13,4 +13,10 @@ func main() {
 	fmt.Println(conf)
 	fmt.Println(conf.RunMode)
 	fmt.Println(conf.Port)
+
+	yaml := config.LoadYaml("./config/config.yaml")
+	fmt.Println(yaml)
+	fmt.Println(yaml.Redis)
+	fmt.Println(yaml.Mysql)
+	fmt.Println(yaml.Mysql.Username)
 }
